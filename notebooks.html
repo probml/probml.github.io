@@ -2,16 +2,15 @@
 <html>
 
 <body>
-
-    <h2>What Can JavaScript Do?</h2>
-
-    <p id="demo">JavaScript can change HTML content.</p>
-
     <script>
         function redirect() {
-            location.replace("https://github.com/probml/pyprobml/blob/master/notebooks.md");
-        }
+            var url = location.href;
+            // split url by # and get last part
+            var notebook = url.split("#")[1];
 
+            // redirect to notebooks.md 
+            location.replace("https://github.com/probml/pyprobml/blob/master/notebooks.md#".concat(notebook));
+        }
         window.onload = function () { redirect(); };
 
     </script>
