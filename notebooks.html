@@ -9,7 +9,7 @@
             var notebook = url.split("#")[1];
 
             // redirect to notebooks.md 
-            location.replace("https://github.com/probml/pyprobml/blob/auto_notebooks_md/notebooks.md".concat(notebook));
+            location.replace("https://github.com/probml/pyprobml/blob/auto_notebooks_md/notebooks.md#".concat(notebook));
         }
         window.onload = function () { redirect(); };
 
