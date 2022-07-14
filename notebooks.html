@@ -1,3 +1,19 @@
-<meta http-equiv="refresh" content="0; url=https://github.com/probml/pyprobml/blob/auto_notebooks_md/notebooks.md" />
+<!DOCTYPE html>
+<html>
 
+<body>
+    <script>
+        function redirect() {
+            var url = location.href;
+            // split url by # and get last part
+            var notebook = url.split("#")[1];
 
+            // redirect to notebooks.md 
+            location.replace("https://github.com/probml/pyprobml/blob/auto_notebooks_md/notebooks.md".concat(notebook));
+        }
+        window.onload = function () { redirect(); };
+
+    </script>
+</body>
+
+</html>
